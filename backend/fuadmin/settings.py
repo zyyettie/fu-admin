@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-x4k4^#6wovi1aep8%ow!5fr%(9o#1u=+0+nzi($_j=^d*ui6g3
 DEBUG = locals().get('DEBUG', True)
 ALLOWED_HOSTS = locals().get('ALLOWED_HOSTS', ['*'])
 DEMO = locals().get('DEMO', False)
+DIAGIM = locals().get('DIAGIM', False)
 
 # Application definition
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'system',
     'demo',
+    'diagim',
     'generator',
     'go_view',
 ]
