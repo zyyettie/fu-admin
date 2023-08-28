@@ -4,6 +4,7 @@
 # @FileName: api.py
 # @Software: PyCharm
 from demo.router import demo_router
+from diagim.router import diagim_router
 from system.router import system_router
 from utils.fu_auth import GlobalAuth
 from utils.fu_ninja import FuNinjaAPI
@@ -24,5 +25,6 @@ def a(request, exc):
 
 api.add_router('/system/', system_router)
 api.add_router('/demo/', demo_router)
+api.add_router('/diagim/', diagim_router)
 api.add_router('/generator/', generator_router)
 api.add_router('/goview/', go_view_router)
